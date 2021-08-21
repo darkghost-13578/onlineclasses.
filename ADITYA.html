@@ -1,0 +1,291 @@
+                                       <! THIS IS CODE SCTRUCTURE OF MY ONLINE CLASS LINKS ->
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+document.onkeydown = function(event)
+    {
+    if(event.keyCode==123)
+    {
+        alert('YOU CANNOT ACESS THE SOURCE CODE');
+        return false;
+    }
+    else if(event.ctrlKey && event.shiftKey && event.keyCode==73)
+    {
+        alert('YOU CANNOT ACESS THE SOURCE CODE')
+        return false;  //Prevent from ctrl+shift+i
+    }
+    else if(event.ctrlKey  && event.keyCode==73)
+    {
+        alert('YOU CANNOT ACESS THE SOURCE CODE')
+        return false;  //Prevent from ctrl+i
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==74) {
+        alert('YOU CANNOT ACESS THE SOURCE CODE')
+        return false; //Prevent from ctrl+shift+j
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==67) {
+        alert('YOU CANNOT ACESS THE SOURCE CODE')
+        return false; //Prevent from ctrl+shift+c
+    }
+    else if (event.ctrlKey && event.keyCode==85) {
+        alert('YOU CANNOT ACESS THE SOURCE CODE')
+        return false; //Prevent from ctrl+u
+    }
+};
+document.oncontextmenu = function(e)
+{
+alert('Right Click Not Allowed')
+e.preventDefault();
+};
+</script>
+
+  <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, 
+        initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+<style>
+  #all {
+     color: white;
+     font-family: 'Lobster', cursive;
+     text-align: center;
+     background-color: green;
+     font-size: 40px;
+}
+
+  .b {
+     color: darkred;
+     font-size: 20px;
+}
+
+  #clock {
+      font-size: 44px;
+      width: 225px;
+      margin: 50px;
+      text-align: center;
+      align-self: center;
+      align-content: center;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 5px;
+      color: red;
+      background-color: black;       
+}
+</style>
+<meta charset="UTF-8">
+
+<title>ONLINE CLASSES</title>
+
+</head>
+
+<body style="background-image: url(https://cdn.wallpapersafari.com/32/70/HNrbB4.jpg);">
+    
+    <script type="text/javascript">
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+</script>
+<script>
+    setInterval(text, 1);
+        function text() {
+    var n = new Date();
+    var y = n.getFullYear();
+    var m = n.getMonth() + 1;
+    var d = n.getDate();
+    var hours = n.getHours();
+    var minutes = n.getMinutes();
+    var dayOfWeekNumber = n.getDay();
+
+   if (dayOfWeekNumber == 0) {
+    document.getElementById("all").innerHTML = ""
+    document.getElementById("classes").href = ""
+   } 
+   else {
+
+   if (hours == 5 && minutes > 29) {
+    document.getElementById("all").innerHTML = "TUTION CLASS TIMINGS 5:30 AM TO 7:00 AM"
+    document.getElementById("classes").href = "https://us02web.zoom.us/j/3883317582?pwd=aVA0S05lQmxFS3gvdGdVVzlRdlo4QT09"
+  }
+
+   else if (hours == 6) {
+    document.getElementById("all").innerHTML = "TUTION CLASS TIMINGS 5:30 AM TO 7:00 AM"
+    document.getElementById("classes").href = "https://us02web.zoom.us/j/3883317582?pwd=aVA0S05lQmxFS3gvdGdVVzlRdlo4QT09"
+  }
+
+   else if (hours == 8 && minutes > 9 && minutes < 51) {
+    document.getElementById("all").innerHTML = "हिंदी HINDI  CLASS  BASHEER  SIR 08:10 AM TO 08:50 AM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=fdb49ce36e704844b6f7e6c49a6bb95702014404923&in=shsgwrl2100"
+   } 
+
+   else if (hours == 9 && minutes < 41) {
+    document.getElementById("all").innerHTML = "SCIENCE CLASS SRI LAKSHMI MAM 09:00 AM TO 09:40 AM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=6fa3d21073c04b588a1d090b8a2156fc02014404923&in=shsgwrl2100"
+   }
+
+   else if (hours == 9 && minutes > 49) {
+    document.getElementById("all").innerHTML = "MATHS CLASS FAREED SIR 09:50 AM TO 10:30 AM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=7e50320fbea24c3dbf5592a39e40793302014404923&in=shsgwrl2100"
+   }
+
+   else if (hours == 10 && minutes < 31) {
+    document.getElementById("all").innerHTML = "MATHS CLASS FAREED SIR 09:50 AM TO 10:30 AM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=7e50320fbea24c3dbf5592a39e40793302014404923&in=shsgwrl2100s"
+   }
+
+   else if (hours == 10 && minutes > 39) {
+    document.getElementById("all").innerHTML = "తెలుగు TELUGU CLASS RAMESH SIR 10:40 AM TO 11:20 AM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=377e0184bd324baab772dfb0e34f68d302014404923&in=shsgwrl2100"
+   }
+
+   else if (hours == 11 && minutes < 21) {
+    document.getElementById("all").innerHTML = "తెలుగు TELUGU CLASS RAMESH SIR 10:40 AM TO 11:20 AM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=377e0184bd324baab772dfb0e34f68d302014404923&in=shsgwrl2100"
+   }
+
+   else if (dayOfWeekNumber > 0 && dayOfWeekNumber < 4 && hours == 11 && minutes > 29) {
+    document.getElementById("all").innerHTML = "SOCIAL CLASS AZIZ SIR 11:30 AM TO 12:10 PM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=a58ff8369b4c494eb74bce942e371a9002014404923&in=shsgwrl2100"
+   }
+
+   else if (dayOfWeekNumber > 0 && dayOfWeekNumber < 4 && hours == 12 && minutes < 11) {
+    document.getElementById("all").innerHTML = "SOCIAL CLASS AZIZ SIR 11:30 AM TO 12:10 PM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=a58ff8369b4c494eb74bce942e371a9002014404923&in=shsgwrl2100"
+   }
+
+   else if (dayOfWeekNumber > 3 && dayOfWeekNumber < 7 && hours == 11 && minutes > 29) {
+    document.getElementById("all").innerHTML = "ENGLISH CLASS PREM SIR 11:30 AM TO 12:10 PM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=f85f1f8656bf4bd2b5c4e1db83dbc69002014404923&in=shsgwrl2100"
+   }
+
+   else if (dayOfWeekNumber > 3 && dayOfWeekNumber < 7 && hours == 12 && minutes < 11) {
+    document.getElementById("all").innerHTML = "ENGLISH CLASS PREM SIR 11:30 AM TO 12:10 PM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=f85f1f8656bf4bd2b5c4e1db83dbc69002014404923&in=shsgwrl2100"
+   }
+
+   else if (hours == 12 && minutes > 19) {
+    document.getElementById("all").innerHTML = "IIT MATHS CLASS NAGTEJ SIR 12:10 PM TO 1:00 PM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=b2dff58584a248cb8c8a85136c2bb55802014404923&in=shsgwrl2100"
+   }
+
+   else if (hours == 13 && minutes > 29) {
+    document.getElementById("all").innerHTML = "IIT CHEMISTRY CLASS RAMAKRISHNA SIR 01:30 PM TO 02:10 PM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=0a2cdbeb8fe24fecb4b4ef2cbe4621d102014404923&in=shsgwrl2100"
+   }
+
+   else if (hours == 14 && minutes < 11) {
+    document.getElementById("all").innerHTML = "IIT CHEMISTRY CLASS RAMAKRISHNA SIR 01:30 PM TO 02:10 PM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=0a2cdbeb8fe24fecb4b4ef2cbe4621d102014404923&in=shsgwrl2100"
+   }
+
+   else if (hours == 14 && minutes > 19) {
+    document.getElementById("all").innerHTML = "IIT PHYSICS CLASS SWETHA MAM 2:20 PM TO 03:00 PM"
+    document.getElementById("classes").href = "https://zoom-dot-tchrnote-remote.appspot.com/index.html?sid=9f187bafda3a42b69abcd65d0eb85fa002014404924&in=shsgwrl2100"  
+   }
+
+   else if (hours == 17 && minutes > 29) {
+    document.getElementById("all").innerHTML = "TUTION CLASS TIMINGS 5:30 PM TO 8:00 PM"
+    document.getElementById("classes").href = "https://us02web.zoom.us/j/3883317582?pwd=aVA0S05lQmxFS3gvdGdVVzlRdlo4QT09"
+  }
+
+   else if (hours == 18 ) {
+    document.getElementById("all").innerHTML = "TUTION CLASS TIMINGS 5:30 PM TO 8:00 PM"
+    document.getElementById("classes").href = "https://us02web.zoom.us/j/3883317582?pwd=aVA0S05lQmxFS3gvdGdVVzlRdlo4QT09"
+  }
+  
+   else if (hours == 19) {
+    document.getElementById("all").innerHTML = "TUTION CLASS TIMINGS 5:30 PM TO 8:00 PM"
+    document.getElementById("classes").href = "https://us02web.zoom.us/j/3883317582?pwd=aVA0S05lQmxFS3gvdGdVVzlRdlo4QT09"
+  }
+
+   else {
+    document.getElementById("all").innerHTML = ""
+    document.getElementById("classes").href = ""
+      }
+ }
+   if (dayOfWeekNumber == 0) {
+    document.getElementById("weekday").innerHTML = "SUNDAY " + d + "/" + m + "/" + y
+    document.getElementById("phrase").innerHTML = "TIME TO CHILLAX (OR) I MAY HAVE AN EXAM NOW"
+   }
+
+   else if (dayOfWeekNumber == 1) {
+    document.getElementById("weekday").innerHTML = "MONDAY " + d + "/" + m + "/" + y
+    document.getElementById("phrase").innerHTML = "MONDAY MORNING BLUES"
+}  
+
+   else if (dayOfWeekNumber == 2) {
+    document.getElementById("weekday").innerHTML = "TUESDAY " + d + "/" + m + "/" + y
+    document.getElementById("phrase").innerHTML = "TACO TIME"
+}
+
+   else if (dayOfWeekNumber == 3) {
+    document.getElementById("weekday").innerHTML = "WEDNESDAY " + d + "/" + m + "/" + y
+    document.getElementById("phrase").innerHTML = "THREE MORE DAYS TO WEEKEND"
+}
+
+   else if (dayOfWeekNumber == 4) {
+    document.getElementById("weekday").innerHTML = "THURSDAY " + d + "/" + m + "/" + y
+    document.getElementById("phrase").innerHTML = "WEEKEND IS ALMOST HERE"
+}
+
+   else if (dayOfWeekNumber == 5) {
+    document.getElementById("weekday").innerHTML = "FRIDAY " + d + "/" + m + "/" + y
+    document.getElementById("phrase").innerHTML = "WEEKEND IS HERE"
+}
+
+   else if (dayOfWeekNumber == 6) {
+    document.getElementById("weekday").innerHTML = "SATURDAY " + d + "/" + m + "/" + y
+    document.getElementById("phrase").innerHTML = "PARTY TIME (or) I MAY HAVE AN EXAM TOMORROW"
+}
+
+}
+</script>
+
+<h1 id="weekday"; class="b"></h1>
+
+<h1 id="phrase"; class="b"></h1>
+            
+<div id="clock">00:00:00</div>
+
+   <a href=""; id="classes"; target="_blank"><h1 id="all"></h1></a>
+
+<div style="background-color: white;">
+<a href="https://support2-dot-tchrnote-remote.appspot.com/parentlogin?eid=2100">SCHOOL WEBSITE</a>
+<a href="https://qpass-dot-tchrnote-remote.appspot.com/login/index.html?instance=WSMI-WRL-2122" style="text-align:
+ center; ;">TUTION EXAM LINK</a>
+ <a href="https://qpass-dot-tchrnote-remote.appspot.com/login/index.html?instance=SHSG-WRL-2100" style="text-align: right;">SCHOOL EXAM LINK</a>
+ <a href="http://login.hireachbroadband.com/login"; style="text-align: right;">LOGIN TO NETWORK</a>
+</div>
+
+</body>
+</html>
+                                               <!MADE BY ADITYA CHOUHAN.M->
